@@ -1,0 +1,34 @@
+var number=3;
+var name=`js`;
+var iscloudy=true;
+console.log(number+ " " +name+ " "+iscloudy);
+document.write(number);
+document.write(name);
+document.write(iscloudy);
+
+//task2
+console.log(typeof(number));
+console.log(typeof(name));
+console.log(typeof(isclousy));
+
+//task3
+var number1=(prompt("Enter the first value"));
+var number2=(prompt("Enter the second value"));
+alert(number1+number2);
+console.log(number1+number2);
+console.log(number1*number2);
+console.log(number1-number2);
+console.log(number1/number2);
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    
+</body>
+</html>

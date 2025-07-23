@@ -1,0 +1,50 @@
+//let a=10;
+//function say(){
+    //console.log("Hai global scope")
+    //console.log("Within"+a);
+//}
+//say()
+//console.log("outside"+a);
+
+//function Say(){
+    //let name="Javasript"
+   // console.log("Hai global Scope");
+   // console.assert("Within the func"+name);
+
+//}
+//Say()
+//function voting(age){
+    //if(age>=18){
+       // let iscloudy=true;
+        //console.log("eligible")
+        //.log(iscloudy);
+
+    //}
+    //console.log(israining);
+//}
+//voting(18)
+
+//local scope(same as function or block scope depending on context)
+//callback function 
+
+//function text(){
+    //console.log("message");
+
+//}
+//text();
+//function send(callback){
+    //console.log("message sended");
+    //setTimeout(callback,2000);
+
+//}
+//send(text);
+
+let count=0;
+let Interval=()=>{
+    count++;
+    console.log(count);
+    if(count < 5){
+        Interval();
+    }
+}
+Interval();

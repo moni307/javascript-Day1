@@ -1,0 +1,53 @@
+//array
+//let number=[1,2,"three",true];
+
+//let names=new Array("john","moni");
+
+//console.log(number[2]);
+//console.log(names.length);
+
+//filter()-it filtered the result arguments
+
+//let number=[1,2,3,4,5,];
+//let result=number.filter(number =>number[0]);
+//console.log(result);
+
+
+//let number=[1,2,3,4,5];
+//number.splice(1,3,"Hai");
+//console.log(number)
+//object
+//let details={
+    //name:"monika",
+    //totalmark:"80",
+    //nested obj
+    //subject:{
+        //dbms:"90",
+       // java:"91"
+   // },
+    //avg:function(){
+       // let sum=parseInt(this.subject.dbms)+parseInt(this.subject.java);
+        //return sum;  
+      //}
+//}
+//console.log(details.totalmark);
+//console.log(details["name"]); 
+//console.log(details.subject.dbms);
+//console.log(details.subject["java"]); 
+//console.log(details.avg());
+
+//const person={
+    //name: "Asha",
+    //age: 33,
+    //city: "chennai"
+//};
+//const{name,age,city}=person;
+
+//console.log(name);
+//console.log(age);
+//console.log(city);
+
+//const person=["moni",18,"javaprogramming"];
+
+//const[name,age,designation]=person;
+//console.log(name+ " "+age+ " "+designation);      

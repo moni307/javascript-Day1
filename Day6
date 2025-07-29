@@ -1,0 +1,18 @@
+//let number=7604932420
+//let test=/^[1-9]\d{9}$/;
+//if(test.test(number.toString())
+   // {
+   // console.log("correct");
+//}
+//else{
+    //console.log("check your valid num");
+//}
+
+//let text="Hai Hello";
+//let match=/\bh\w+\b/gi;
+//console.log(match? text:0)
+//console.log(text.length);
+
+//const text="hello! how are you";
+//const words=text.match(/\bh\w+o\b/gi);
+//console.log(words.length);

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //quantifiers specify how many times a character or graph should apper.
+        let text="aaaba";
+        let pattern=/\a*/g;
+        let pattern2=/\a+/g;
+        let pattern3=/\a?/g;
+        let result=text.match(pattern);
+        let result2=text.match(pattern2);
+        let result3=text.match(pattern3);
+        console.log(result)
+        console.log(result2)
+        console.log(result3)
+
+        //Modifiers(flags)change how regex matches.
+
+        let sentence="Hai Hello\nHai , I'm Fine."
+        let pattern4=/^\hai+/igm;
+        let result5=sentence.match(pattern4);
+        console.log(result5);
+
+        //Meta characters have special meaning in regex.
+        
+        //common Meta characters:
+
+        //.->any character except newline
+        // \d->digit(0-9)
+        // \w->word character(letters,digits,_)
+        // \s->whiteSpace
+        // ^->start of string/line
+        //$->end of string/line
+
+        let digitchar="js001java";
+        let pattern6=/\d+\w+/g;
+        let result6=digitchar.match(pattern6);
+        console.log(result6);
+
+        //parentheses()are used to grouph patterns and capture submatches
+
+        let username="javascript program";
+        let pattern7=/(\w+)/g;
+        let result7=username.match(pattern7);
+        console.log(result7);
+        console.log(result7[0]);
+        console.log(result7[1]);
+
+        //common regex methods in javascript:
+        //test()->return ture/false:
+        //exec()->return metched result with groups:
+        //match()->return array of matches
+        //replace()->replace matches
+        //split()->split string using regex
+        let lines = "apple banana apple grape";
+        let pattern8 = /apple/;
+        console.log(pattern8.test(lines));
+        //true (because "apple" exits in text)
+
+        let str = "Mr bean has a green apple and a red apple";
+        const regex=/apple/ig;
+        let result9=str.replace(regex,"Strawberries");
+        console.log(result9);
+
+    </script>
+</body>
+</html>

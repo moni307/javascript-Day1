@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Definition:
+        // A set is a collection of unique values.
+        // It automatically removes duplicates
+        // syntax:
+        // Let myset = new Set([iterable]);
+
+        let email=new Set([])
+        email.add("js@gmail.com");
+        email.add("python@gmail.com");
+        email.add("Java@gmail.com");
+        email.add("Java@gmail.com");
+        console.log(email);
+        //email.delete("Java@gmail.com");
+        //console.log(email);
+        //email.clear()
+        //console.log(email);
+        //for of
+        for(let mailId of email){
+            console.log(mailId);
+
+        }
+        email.forEach(x=>{
+            console.log(email)
+
+        })
+        //role based access using set
+        let adminpermission=new Set(["read","write","delete"]);
+        let userpermission=new Set(["read"]);
+
+        function hasPermission(Role,Permission){
+            return Role.has(Permission)
+            console.log(hasPermission(adminpermission,"delete"));//true
+            console.log(hasPermission(userpermission,"delete"));//false
+
+        }
+
+        //union,intersection,difference using Sets
+        let setA=new Set([1,2,3,4,5,1]);
+        let setB=new Set([6,2,7,8,9,10]);
+
+        let union=new Set([...setA,...setB])
+        console.log(union);
+
+        //intersection
+        let intersection=new Set([...setA].filter(x=>setB.has(x)));
+        console.log(intersection);
+
+        let difference=new Set([...setA].filter(x=>!setB.has(x)));
+        console.log(difference)
+
+        let user1={name:"javascript"};
+        let user2={name:"python"};
+        //let map=new Map();
+        let map=new WeakMap();
+        map.set(user1,"welcome");
+        map.set(user2,"hai python");
+        console.log(map);
+        for(let message of map.values()){
+            console.log(message)
+        }
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
